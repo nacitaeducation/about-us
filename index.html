@@ -22,13 +22,12 @@
             line-height: 1.6;
         }
 
-        /* Wadah Utama agar rapi di tengah */
+        /* Wadah Utama Full Width & Dinamis */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 5%; /* Angka 5% ini memberi jarak aman yang dinamis di sisi kiri-kanan layar HP dan Laptop */
+            background-color: var(--warna-bg);
         }
 
         /* Bagian Logo (Tengah Atas) */
@@ -45,7 +44,7 @@
         /* Bagian Sambutan / Filosofi */
         .welcome-section {
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 5%;
             background-color: var(--warna-marun);
             color: white;
             border-radius: 12px;
