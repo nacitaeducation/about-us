@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacita Education</title>
+    <style>
+        /* Pengaturan Tema Warna dari Poster (Krem & Marun) */
+        :root {
+            --warna-bg: #FCF9F2; /* Warna krem latar belakang */
+            --warna-marun: #7A243A; /* Warna teks utama & tombol */
+            --warna-kuning: #EBB62D; /* Warna aksen/sorotan */
+            --warna-teks: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--warna-bg);
+            color: var(--warna-teks);
+            line-height: 1.6;
+        }
+
+        /* Wadah Utama agar rapi di tengah */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        /* Bagian Logo (Tengah Atas) */
+        .header-logo {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--warna-bg);
+        }
+        .header-logo img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        /* Bagian Sambutan / Filosofi */
+        .welcome-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--warna-marun);
+            color: white;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .welcome-section h1 {
+            margin-top: 0;
+            color: var(--warna-kuning);
+        }
+        .welcome-section p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        /* Judul-judul Bagian */
+        h2 {
+            color: var(--warna-marun);
+            text-align: center;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Desain Kotak Program */
+        .program-box {
+            background-color: var(--warna-bg);
+            border-left: 5px solid var(--warna-marun);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .program-box h3 {
+            margin-top: 0;
+            color: var(--warna-marun);
+        }
+        .program-box ul {
+            padding-left: 20px;
+        }
+        .program-box li {
+            margin-bottom: 10px;
+        }
+
+        /* Grid untuk Ketentuan (Bagi 2 kolom di laptop, 1 kolom di HP) */
+        .grid-ketentuan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Bagian Kontak (Bawah) */
+        .footer-contact {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--warna-bg);
+            border-radius: 12px;
+        }
+        .tombol-cta {
+            display: inline-block;
+            background-color: var(--warna-marun);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: 0.3s;
+        }
+        .tombol-cta:hover {
+            background-color: var(--warna-kuning);
+            color: var(--warna-marun);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- BAGIAN LOGO -->
+        <div class="header-logo">
+            <!-- Ganti "logo-nacita.png" dengan nama file logomu yang asli di GitHub -->
+            <img src="logo-nacita.png" alt="Logo Nacita Education">
+        </div>
+
+        <!-- BAGIAN SAMBUTAN (FILOSOFI NACITA) -->
+        <div class="welcome-section">
+            <h1>Selamat Datang di Nacita Education</h1>
+            <p>Kami percaya bahwa setiap anak adalah individu yang unik dengan cara belajarnya masing-masing. Oleh karena itu, kami hadir bukan sekadar sebagai bimbingan belajar biasa. Kami berdedikasi untuk memahami kebutuhan spesifik setiap murid, memberikan dukungan terbaik, dan mendampingi langkah mereka untuk memaksimalkan potensi serta perkembangannya. Jadi paham bareng Nacita!</p>
+        </div>
+
+        <!-- BAGIAN PROGRAM REGULER -->
+        <h2>Program Reguler 2026 / 2027</h2>
+        <div class="program-box">
+            <ul>
+                <li>Calistung (TK B - Kelas 1)</li>
+                <li>Matematika SD (Kelas 3-5)</li>
+                <li>Matematika SMP (Kelas 7-8)</li>
+                <li>IPAS SD (Kelas 4-6)</li>
+                <li>IPA / IPS SMP (Kelas 7-9)</li>
+                <li>Bahasa Inggris* (SD-SMA) - *hanya online</li>
+            </ul>
+        </div>
+
+        <!-- BAGIAN PROGRAM INTENSIF -->
+        <h2>Program Intensif 2026 / 2027</h2>
+        <div class="program-box">
+            <ul>
+                <li>TKA Matematika SD (Kelas 6)</li>
+                <li>TKA Matematika SMP (Kelas 9)</li>
+                <li>Persiapan OSN 2027 jenjang SD-SMP (IPA / IPS)</li>
+                <li>Pendampingan Lomba* - *sesuai kesepakatan</li>
+            </ul>
+        </div>
+
+        <!-- BAGIAN KETENTUAN BIMBEL -->
+        <h2>Ketentuan Bimbel Nacita</h2>
+        <div class="grid-ketentuan">
+            
+            <!-- Ketentuan Tatap Muka -->
+            <div class="program-box">
+                <h3>Mode Tatap Muka</h3>
+                <p>Kegiatan pembelajaran berlangsung secara tatap muka di bimbel maupun home visit. Adapun ketentuannya sebagai berikut:</p>
+                <ul>
+                    <li>Program Privat</li>
+                    <li>Memilih mapel, tempat dan jadwal yang tersedia.</li>
+                    <li>Home visit hanya berlaku bagi siswa yang berdomisili di area Boja, Mijen, dan Ngaliyan. Dengan kesepakatan tentor terlebih dahulu.</li>
+                    <li>Biaya transportasi untuk home visit disesuaikan dengan jarak tempuh</li>
+                </ul>
+            </div>
+
+            <!-- Ketentuan Online -->
+            <div class="program-box">
+                <h3>Mode Daring (Online)</h3>
+                <p>Kegiatan pembelajaran berlangsung secara daring (online) via Zoom Meeting. Adapun ketentuannya sebagai berikut:</p>
+                <ul>
+                    <li>Program Privat/Grup 3-5 siswa</li>
+                    <li>Memilih mapel dan jadwal yang tersedia.</li>
+                    <li>Tersedia bagi siswa seluruh Indonesia</li>
+                    <li>Bersedia menyediakan device yang memadai dan sesuai untuk proses belajar.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BAGIAN FOOTER / KONTAK -->
+        <div class="footer-contact">
+            <h3>Jadi paham bareng Nacita, daftar sekarang!</h3>
+            
+            <!-- Tombol Mengarah ke WhatsApp -->
+            <!-- Ganti angka 6281388753449 dengan format nomor WA-mu -->
+            <a href="https://wa.me/6281388753449" class="tombol-cta">Hubungi Kami (WhatsApp)</a>
+            
+            <p><strong>Informasi dan Pendaftaran:</strong> 0813 8875 3449</p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/nacita_education" style="color: var(--warna-marun);">@nacita_education</a></p>
+            <p><strong>Alamat:</strong> Jl. Pramuka 002/005 Kauman Boja Kendal</p>
+            
+            <!-- Tombol Tambahan Mengarah ke WordPress -->
+            <br>
+            <a href="https://[LINK-WORDPRESS-KAMU]" style="color: #666; text-decoration: underline;">Kunjungi Website Interaktif Kami</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
